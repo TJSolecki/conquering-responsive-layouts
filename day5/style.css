@@ -4,7 +4,7 @@
         "Helvetica Neue", sans-serif;
     --dark-teal: #23424a;
     --light-teal: #38cfd9;
-
+    font-size: 21px;
     color: white;
 }
 
@@ -15,14 +15,17 @@
 
 #hero {
     background: var(--dark-teal);
-    display: grid;
-    grid-template-columns: 1.5fr 1fr;
 }
 
 #hero-content-wrapper {
     width: 80%;
     margin: 0 auto;
     padding: 4em 0;
+    max-width: 1100px;
+}
+
+#hero-text-wrapper {
+    width: 70%;
 }
 
 h1 {
@@ -30,7 +33,7 @@ h1 {
 }
 
 p {
-    margin-bottom: 4rem;
+    margin-bottom: 3em;
     line-height: 1.5rem;
 }
 
@@ -41,13 +44,15 @@ a {
     color: var(--dark-teal);
     font-weight: 700;
     font-size: 1rem;
-    padding: 0.7rem 2rem;
-    border-radius: 2rem;
+    padding: 0.75em 2em;
+    border-radius: 2em;
     text-transform: uppercase;
     text-wrap: nowrap;
     transition: transform 0.3s ease;
 }
 
-a:hover {
+a:hover,
+a:focus {
     transform: scale(1.05);
+    opacity: 0.75;
 }
